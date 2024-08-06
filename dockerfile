@@ -2,6 +2,7 @@ FROM centos:latest
 RUN yum install -y httpd \
 zip\
 unzip
+RUN yum update -y
 ADD C:\Users\vibra\Downloads\pexels-anjana-c-169994-674010.zip /var/www/html/
 WORKDIR /var/www/html/
 RUN unzip pexels-anjana-c-169994-674010.zip
