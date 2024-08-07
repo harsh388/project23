@@ -9,5 +9,5 @@ RUN unzip pexels-anjana-c-169994-674010.zip
 RUN cp -rvf pexels-anjana-c-169994-674010/* .
 RUN rm -rf pexels-anjana-c-169994-674010 pexels-anjana-c-169994-674010.zip
 CMD ["/usr/sbin/httpd","-D","FOREGROUND"]
-EXPOSE 80 
+EXPOSE 80 6565
 
